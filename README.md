@@ -1,5 +1,5 @@
 # IRIS.OS (beta)
-### Assistente Pessoal de Inteligência Artificial (sem inteligencia ainda)
+### Assistente Pessoal de Inteligência Artificial (sem inteligência ainda)
 
 Sistema integrado para gestão de:
 - 💰 **Finanças:** Ganhos de salário, extras e dividendos.
