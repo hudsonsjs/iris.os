@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRIS.OS | Apps (Corridas)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body class="dark-mode">
+    <div class="app-wrapper">
+
+        <div id="iris-intro" class="iris-intro-overlay minimized">
+    <i class="fa-solid fa-microchip iris-chip-intro"></i>
+</div>
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fa-solid fa-terminal pulse"></i>
+                <span class="logo-text">IRIS<span class="logo-dot">.OS</span></span>
+            </div>
+            <nav class="nav-menu">
+                <a href="home.html" class="nav-link"><i class="fa-solid fa-house"></i> Início</a>
+                <a href="apps.html" class="nav-link active"><i class="fa-solid fa-mobile-alt"></i> Apps (Corridas)</a>
+                <a href="contas-a-pagar.html" class="nav-link"><i class="fa-solid fa-file-invoice-dollar"></i> Contas a Pagar</a>
+                <a href="#" class="nav-link"><i class="fa-solid fa-calendar-days"></i> Calendário</a>
+                <a href="emprestimos.html" class="nav-link"><i class="fa-solid fa-building-columns"></i> Empréstimos</a>
+                <a href="investimentos.html" class="nav-link"><i class="fa-solid fa-chart-line"></i> Investimentos</a>
+            </nav>
+            <div class="sidebar-footer">
+    <div class="footer-brand">IRIS.OS</div>
+    <div class="footer-version">versão 1.0</div>
+</div>
+        </aside>
+
+        <main class="app-content">
+            <header class="header-main">
+                <h1>Registro de Corridas</h1>
+                <p>Gerencie seus ganhos diários nos aplicativos</p>
+            </header>
+
+            <div class="actions-panel">
+                <button class="btn btn-primary" onclick="addRow('corridas-table')">+ Nova Corrida</button>
+            </div>
+
+            <div class="notion-table-container">
+                <table class="notion-table" id="corridas-table">
+                    <thead>
+                        <tr>
+                            <th>Descrição / App</th>
+                            <th>Categoria</th>
+                            <th>Data</th>
+                            <th>Valor Bruto</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="corridas-body">
+                        </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <button id="theme-toggle" class="btn-theme-switcher"><i class="fa-solid fa-sun"></i></button>
+    <script src="js/script.js"></script>
+</body>
+</html>
